@@ -45,5 +45,12 @@ pipeline {
         echo 'Tool: Ansible / AWS CLI / Kubernetes (kubectl/Helm).'
       }
     }
+    stage('Notification') {
+      steps {
+        echo 'Task: Send deployment notification to the team.'
+        echo 'Tool: Email / Slack / Teams.'
+      }
+    }
   }
 }
+
